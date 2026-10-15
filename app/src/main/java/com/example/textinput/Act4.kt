@@ -10,5 +10,6 @@ fun FormDataDiri(modifier: Modifier){
     //Variabel-variabel untuk mengingat nilai masukan dari keyboard
     var textNama by remember { mutableStateOf(value = "") }
     var textAlamat by remember { mutableStateOf(value = "") }
+    var textJK by remember {mutableStateOf(value = "")}
 
 }
