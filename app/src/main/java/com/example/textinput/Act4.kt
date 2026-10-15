@@ -1,9 +1,14 @@
 package com.example.textinput
 
 import android.R
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import java.lang.reflect.Modifier
 
 @Composable
@@ -18,4 +23,8 @@ fun FormDataDiri(modifier: Modifier){
     var nama by remember { mutableStateOf(value = "") }
     var alamat by remember { mutableStateOf(value = "") }
     var jenis by remember { mutableStateOf(value = "") }
+
+    Column(modifier = Modifier.padding(top = 50.dp),
+        verticalArrangement = Arrangement.Top,
+
 }
